@@ -1,0 +1,10 @@
+bookid=>111||bookname=>real analysis||bookauthor=>robert g bartle||bookgenre=>maths||isavailable=>yes||delete=>no
+bookid=>112||bookname=>let us see||bookauthor=>yashvant kantekar||bookgenre=>programming||isavailable=>no||delete=>no
+bookid=>114||bookname=>real sis||bookauthor=>robert g bartle||bookgenre=>maths||isavailable=>no||delete=>no
+bookid=>113||bookname=>eco||bookauthor=>paul samu||bookgenre=>eco||isavailable=>yes||delete=>no
+bookid=>114||bookname=>econo||bookauthor=>paul samu||bookgenre=>eco||isavailable=>yes||delete=>no
+bookid=>115||bookname=>HCV||bookauthor=>HC Verma||bookgenre=>physics||isavailable=>no||delete=>no
+bookid=>117||bookname=>lali ji||bookauthor=>mehta||bookgenre=>unknown||isavailable=>yes||delete=>no
+bookid=>125||bookname=>billi billi akh||bookauthor=>babbal rai||bookgenre=>song||isavailable=>yes||delete=>no
+bookid=>191||bookname=>yaaran naal bahaaran||bookauthor=>babbu||bookgenre=>bakwaas||isavailable=>yes||delete=>no
+bookid=>45||bookname=>Shaktiman fro india||bookauthor=>sukhamjot singh||bookgenre=>comic||isavailable=>yes||delete=>no

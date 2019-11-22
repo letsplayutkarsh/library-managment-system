@@ -1,0 +1,8 @@
+issuername=>aguy s||issuerid=>imt2019001||bookname=>real analysis||bookid=>111||issuedate=>2/2/2014||returndate=>2/3/2014||fine=>500
+issuername=>bguy s||issuerid=>imt2019002||bookname=>let us see||bookid=>112||issuedate=>23/2/2014||returndate=>0/0/0||fine=>0
+issuername=>cguy s||issuerid=>imt2019050||bookname=>real sis||bookid=>114||issuedate=>2/4/2014||returndate=>28/4/2014||fine=>180
+issuername=>sukham||issuerid=>imt2019085||bookname=>Shaktiman fro india||bookid=>45||issuedate=>1/3/2019||returndate=>24/3/2019||fine=>135
+issuername=>L S P||issuerid=>imt2019048||bookname=>HCV||bookid=>115||issuedate=>3/5/2019||returndate=>0/0/0||fine=>0
+issuername=>ctc||issuerid=>imt2019080||bookname=>Shaktiman fro india||bookid=>45||issuedate=>21/11/2019||returndate=>10/12/2019||fine=>75
+issuername=>ctc||issuerid=>imt2019080||bookname=>real sis||bookid=>114||issuedate=>21/11/2019||returndate=>0/0/0||fine=>0
+issuername=>sukham||issuerid=>imt2019089||bookname=>kaku||bookid=>121||issuedate=>22/11/2019||returndate=>11/11/2019||fine=>0
