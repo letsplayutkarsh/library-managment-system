@@ -5,4 +5,6 @@ issuername=>sukham||issuerid=>imt2019085||bookname=>Shaktiman fro india||bookid=
 issuername=>L S P||issuerid=>imt2019048||bookname=>HCV||bookid=>115||issuedate=>3/5/2019||returndate=>0/0/0||fine=>0
 issuername=>ctc||issuerid=>imt2019080||bookname=>Shaktiman fro india||bookid=>45||issuedate=>21/11/2019||returndate=>10/12/2019||fine=>75
 issuername=>ctc||issuerid=>imt2019080||bookname=>real sis||bookid=>114||issuedate=>21/11/2019||returndate=>0/0/0||fine=>0
-issuername=>sukham||issuerid=>imt2019089||bookname=>kaku||bookid=>121||issuedate=>22/11/2019||returndate=>11/11/2019||fine=>0
+issuername=>sukham||issuerid=>imt2019089||bookname=>kaku||bookid=>121||issuedate=>22/11/2019||returndate=>1/12/2019||fine=>0
+issuername=>imt2019001||issuerid=>imt2019001||bookname=>real analysis||bookid=>111||issuedate=>21/11/2019||returndate=>0/0/0||fine=>0
+issuername=>utkarsh||issuerid=>imt2019089||bookname=>Shaktiman fro india||bookid=>45||issuedate=>21/11/2019||returndate=>0/0/0||fine=>0

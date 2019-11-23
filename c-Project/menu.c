@@ -59,11 +59,10 @@ int main(void)
 
 
 	//The interface comes here
-	printf("WELCOME TO LIBRARY MANAGEMENT SYSTEM\n");
 
 
 
-
+void display_menu(){
 	printf("\n1.  Issue a book\n");
 	printf("2.  Return a book\n");
 	printf("3.  Display all issue records\n");
@@ -74,32 +73,24 @@ int main(void)
 	printf("8.  Add book\n");
 	printf("9.  Delete Book\n");
 	printf("0.  Save and Quit\n");
+}
 
+void partition(){
+	for(int i=0;i<168;i++){
+		printf("-");
+	}
+}
 
+	printf("\n\n\n\t\t\t\t	\t\t\t\tWELCOME TO LIBRARY MANAGEMENT SYSTEM\n\n\n");
+
+	display_menu();
 	int o = -1;
 	while(o != 0)
 	{
-		printf("\n(-1.) DISPLAY MENU\n");
-
 		printf("\nType an option: ");
 		scanf("%d%*c", &o);
 
-		if(o == -1)
-		{
-			printf("\n1.  Issue a book\n");
-			printf("2.  Return a book\n");
-			printf("3.  Display all issue records\n");
-			printf("4.  Search records\n");
-			printf("5.  Display all books\n");
-			printf("6.  Display books by availaibility\n");
-			printf("7.  Search books\n");
-			printf("8.  Add book\n");
-			printf("9.  Delete Book\n");
-			printf("0.  Save and Quit\n");
-
-		}
-
-		else if(o == 1)
+		if(o == 1)
 		{
 			char iname[100], iid[100];
 			int bid, d, m, y;
@@ -107,24 +98,39 @@ int main(void)
 			printf("\nGive issuer's name : ");
 			scanf("%[^\n]%*c", iname);
 
-			printf("\nGive issuer's roll number : ");
+			printf("Give issuer's roll number : ");
 			scanf("%[^\n]%*c", iid);
 
-			printf("\nGive book id : ");
-			scanf("%d%*c", &bid);
-
 			lower(iid);
-
-			if(!available(book, bid, &nb)){
-				printf("Book not available\n\n");
+			if(iidpresent(irecord, ni, iid))
+			{
+				printf("\nALREADY ISSUED ONE BOOK\n");
 			}
+
 			else
 			{
-				printf("\nGive issue date in format d m y : ");
-				scanf("%d %d %d%*c", &d, &m, &y);
 
-				addissuer(irecord, book, &ni, &nb, iname, iid, bid, d, m, y);
+				printf("Give book id : ");
+				scanf("%d%*c", &bid);
+
+
+				if(!available(book, bid, &nb)){
+					printf("\nBOOK NOT AVAILABLE\n");
+				}
+				else
+				{
+					printf("Give issue date in format d m y : ");
+					scanf("%d %d %d%*c", &d, &m, &y);
+
+					addissuer(irecord, book, &ni, &nb, iname, iid, bid, d, m, y);
+				}
 			}
+
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -137,7 +143,7 @@ int main(void)
 
 			if(!ridpresent(irecord, iid, &ni))
 			{
-				printf("Roll Number not present or book returned already\n");
+				printf("\nROLL NUMBER NOT PRESENT OR BOOK RETURNED ALREADY\n");
 			}
 			else
 			{
@@ -145,6 +151,11 @@ int main(void)
 				scanf("%d %d %d%*c", &d, &m, &y);
 				addreturndate(irecord, book, iid, &ni, &nb, d, m, y);
 			}
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -153,6 +164,11 @@ int main(void)
 		{
 			//use display all function
 			Display_all_records(ni, irecord);
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -167,7 +183,7 @@ int main(void)
 			printf("5. Search by Issuer Name\n");
 			printf("6. Search by Issuer Id\n");
 			printf("7. Display returned books\n");
-			printf("8. Display not returned books\n");
+			printf("8. Display not returned books\n\n");
 
 			printf("\nGive option number : ");
 			scanf("%d%*c", &k);
@@ -215,8 +231,13 @@ int main(void)
 
 			}
 			else{
-				printf("option not valid");
+				printf("OPTION NOT VALID");
 			}
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 
 
 		}
@@ -227,6 +248,11 @@ int main(void)
 		{
 			//use display all function
 			Display_all_books(nb, book);
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -234,7 +260,7 @@ int main(void)
 		else if(o == 6)
 		{
 			printf("\n1. Display available books");
-			printf("\n2. Display issued books\n");
+			printf("\n2. Display issued books\n\n");
 
 			int g;
 			printf("\nGive option number : ");
@@ -249,8 +275,13 @@ int main(void)
 				Search_by_availability(nb, book, "no");
 			}
 			else{
-				printf("option not valid");
+				printf("OPTION NOT VALID");
 			}
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -264,7 +295,7 @@ int main(void)
 			printf("2. Search by Author\n");
 			printf("3. Search by Genre\n");
 			printf("4. Search by Book ID\n");
-			printf("5. Display no of copies by Book\n");
+			printf("5. Display no of copies by Book\n\n");
 
 			printf("\nGive option number : ");
 
@@ -296,8 +327,13 @@ int main(void)
 				no_of_books(nb, book);
 			}
 			else{
-				printf("option not valid");
+				printf("OPTION NOT VALID");
 			}
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -312,21 +348,26 @@ int main(void)
 
 			while(!validbid(book, bid, &nb))
 			{
-				printf("\nBook ID Exists\n");
+				printf("\nBOOK ID EXISTS\n");
 				printf("\nGive book ID : ");
 				scanf("%d%*c", &bid);
 			}
 
-			printf("\nGive the book name : ");
+			printf("Give the book name : ");
 			scanf("%[^\n]%*c", bname);
 
-			printf("\nGive the book author : ");
+			printf("Give the book author : ");
 			scanf("%[^\n]%*c", bauthor);
 
-			printf("\nGive the book genre : ");
+			printf("Give the book genre : ");
 			scanf("%[^\n]%*c", bgenre);
 
 			addbook(book, &nb, bid, bname, bauthor, bgenre);
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 
@@ -339,16 +380,30 @@ int main(void)
 
 			if(available(book, bid, &nb)){
 				delbookbyid(book, &nb, bid);
+				printf("\nBOOK DELETED SUCCESSFULLY\n");
 			}
 			else{
-				printf("\nBook not returned or not available\n");
+				printf("\nBOOK NOT RETURNED OR NOT AVAILABLE\n");
 			}
+			printf("\n\n");
+			partition();
+			printf("\n\n");
+			display_menu();
+			printf("\n\n");
 		}
 
 		else
 		{
-			if(o != 0)
-				printf("\nEnter valid option\n");
+			if(o != 0){
+				printf("\nENTER VALID OPTION\n");
+				printf("\n\n");
+				partition();
+				printf("\n\n");
+				display_menu();
+				printf("\n\n");
+			}
+
+
 		}
 
 	}

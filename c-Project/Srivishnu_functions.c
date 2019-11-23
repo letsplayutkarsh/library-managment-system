@@ -43,7 +43,7 @@ void Search_by_name(int nb,books book[])
 	{
         if (i == 0)
         {
-            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY\n");
+            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n\n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY\n");
         }
         if (strcmp(book[i].delete,"no") == 0)
         {
@@ -57,7 +57,7 @@ void Search_by_name(int nb,books book[])
     }
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 }
 
@@ -72,7 +72,7 @@ void Search_by_author(int nb,books book[])
 	{
         if (i == 0)
         {
-            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY");
+            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n\n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY");
         }
         if (strcmp(book[i].delete,"no") == 0)
         {
@@ -86,7 +86,7 @@ void Search_by_author(int nb,books book[])
     }
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 }
 
@@ -101,7 +101,7 @@ void Search_by_genre(int nb,books book[])
 	{
         if (i == 0)
         {
-            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY");
+            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n\n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY");
         }
         if (strcmp(book[i].delete,"no") == 0)
         {
@@ -115,7 +115,7 @@ void Search_by_genre(int nb,books book[])
     }
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 }
 
@@ -126,7 +126,7 @@ void Search_by_availability(int nb,books book[], char *bookavailability)
 	{
         if (i == 0)
         {
-            printf("\n\n%-10s %-30s %-30s %-20s \n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE");
+            printf("\n\n%-10s %-30s %-30s %-20s \n\n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE");
         }
         if (strcmp(book[i].delete,"no") == 0)
         {
@@ -149,7 +149,7 @@ void Search_by_bookid(int nb, books book[])
 	{
         if (i == 0)
         {
-            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY");
+            printf("\n\n%-10s %-30s %-30s %-20s %-5s \n\n","BOOK ID","BOOK NAME","BOOK AUTHOR","BOOK GENRE","BOOK AVAILABILITY");
         }
         if (strcmp(book[i].delete,"no") == 0)
         {
@@ -164,7 +164,7 @@ void Search_by_bookid(int nb, books book[])
     }
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 }
 
@@ -174,9 +174,9 @@ void Display_all_records(int ni, issuer irecord[])
     {
         if (i == 0)
         {
-            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
         }
-        printf("\n%-25s %-15s %-8d %-30s %5d-%d-%d %15d-%d-%-15d %d ",irecord[i].iname,irecord[i].iid,irecord[i].bid,irecord[i].bname,irecord[i].idate.d,irecord[i].idate.m,irecord[i].idate.y,irecord[i].rdate.d,irecord[i].rdate.m,irecord[i].rdate.y,irecord[i].fine);
+        printf("%-25s %-15s %-8d %-30s %5d-%d-%d %15d-%d-%-15d %d \n",irecord[i].iname,irecord[i].iid,irecord[i].bid,irecord[i].bname,irecord[i].idate.d,irecord[i].idate.m,irecord[i].idate.y,irecord[i].rdate.d,irecord[i].rdate.m,irecord[i].rdate.y,irecord[i].fine);
 
     }
     printf("\n");

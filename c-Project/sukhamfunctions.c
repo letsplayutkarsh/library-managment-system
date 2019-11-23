@@ -11,7 +11,7 @@ void search_by_issuedate(int ni, issuer issue_rec[])
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 		if( d == issue_rec[i].idate.d && m == issue_rec[i].idate.m && y == issue_rec[i].idate.y)
@@ -23,7 +23,7 @@ void search_by_issuedate(int ni, issuer issue_rec[])
 	}
 	if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 
 }
@@ -37,7 +37,7 @@ void search_by_returndate(int ni, issuer issue_rec[])
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 		if( d == issue_rec[i].rdate.d && m == issue_rec[i].rdate.m && y == issue_rec[i].rdate.y)
@@ -49,7 +49,7 @@ void search_by_returndate(int ni, issuer issue_rec[])
 	}
 	if(count == 0)
     {
-        printf("no data found \n");
+		printf("NO DATA FOUND\n");
     }
 
 }
@@ -59,7 +59,7 @@ void returned_books(issuer issue_rec[],int ni)
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 		if( issue_rec[i].rdate.d != 0 && issue_rec[i].rdate.m != 0 && issue_rec[i].rdate.y !=0)
@@ -75,7 +75,7 @@ void not_returned_books(issuer issue_rec[],int ni)
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 		if( issue_rec[i].rdate.d == 0 && issue_rec[i].rdate.m == 0 && issue_rec[i].rdate.y ==0)

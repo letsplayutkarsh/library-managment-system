@@ -44,7 +44,7 @@ void search_by_issuername(int ni, issuer issue_rec[])
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
         if (stringcompare2(issuername,issue_rec[i].iname) == 0 )
@@ -55,7 +55,7 @@ void search_by_issuername(int ni, issuer issue_rec[])
 	}
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 
 }
@@ -72,7 +72,7 @@ void search_by_bookname(int ni, issuer issue_rec[],int nb ,  books book[])
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 
@@ -84,7 +84,7 @@ void search_by_bookname(int ni, issuer issue_rec[],int nb ,  books book[])
 	}
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 
 }
@@ -101,7 +101,7 @@ void search_by_book_id(int ni, issuer issue_rec[])
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 
@@ -113,7 +113,7 @@ void search_by_book_id(int ni, issuer issue_rec[])
 	}
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 
 }
@@ -131,7 +131,7 @@ void search_by_issuer_id(int ni, issuer issue_rec[])
 	{
 		if(i==0)
 		{
-            printf("\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
+            printf("\n\n%-25s %-15s %-8s %-30s %-22s %-20s %-5s \n\n","ISSUER NAME","ISSUER ID","BOOK ID","BOOK NAME","ISSUE DATE","RETURN DATE","FINE");
 
 		}
 
@@ -143,7 +143,7 @@ void search_by_issuer_id(int ni, issuer issue_rec[])
 	}
     if(count==0)
     {
-        printf("no data found \n");
+        printf("NO DATA FOUND\n");
     }
 
 }

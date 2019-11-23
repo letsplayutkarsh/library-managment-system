@@ -23,6 +23,18 @@ void lower(char * st)
 	}
 }
 
+int iidpresent(issuer irecord[], int ni, char * iid)
+{
+	for(int i = 0; i < ni; i++)
+	{
+		if(strcmp(irecord[i].iid, iid) == 0 && irecord[i].rdate.d == 0)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+
 int ridpresent(issuer irecord[], char* iid, int * ni)
 {
 	lower(iid);

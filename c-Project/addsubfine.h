@@ -9,3 +9,4 @@ int validbid(books book[], int bid, int * nb);
 int available(books book[], int bid, int * nb);
 int ridpresent(issuer irecord[], char* iid, int * ni);
 void lower(char * st);
+int iidpresent(issuer irecord[], int ni, char * iid);
